@@ -1,0 +1,19 @@
+.blogs-main-new {
+  grid-template: 3fr / 1fr;
+}
+.blogs-news-img-container {
+  grid-row: 2;
+}
+.blogs-news-info-container {
+  grid-column: 1;
+  grid-row: 3;
+}
+.blogs-posts-container .post-container {
+  max-width: 45%;
+}
+.projects-main-container {
+  grid-template: 2fr / 1fr 1fr;
+}
+.profile-main-container .profile-container {
+  display: block;
+}

@@ -1,0 +1,81 @@
+.header-icons-container {
+  display: flex;
+  justify-content: center;
+}
+header .header-icons-container .icons {
+  margin: 0;
+}
+nav .nav-logo-container {
+  margin: 0;
+}
+nav .profile-link {
+  margin-right: 20px;
+}
+
+.home-main section {
+  margin-top: 80px;
+}
+.home-main-text {
+  font-size: 3.5rem;
+}
+
+.blogs-news-container {
+  padding: 0 20px 10px;
+}
+.blogs-main-new {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.blogs-posts-container h3 {
+  padding: 0;
+  margin: 15px 0;
+}
+.blogs-posts-container {
+  padding: 0 20px 10px;
+}
+.grid-container {
+  display: flex;
+  flex-direction: column;
+}
+.blogs-posts-container .post-container {
+  max-width: none;
+}
+
+.blogpost-img-container {
+  padding: 0 20px 10px;
+}
+.blogpost-main-container {
+  padding: 0 20px 10px;
+}
+.contact-main-container {
+  flex-direction: column;
+  
+}
+.contact-main-container div {
+  width: 90%;
+}
+
+.profile-main-container {
+  margin-bottom: 30px;
+  padding: 30px 20px;
+}
+.profile-main-container img {
+  width: 100%;
+  margin: 0;
+}
+.profile-main-projects {
+  padding: 0 20px 10px;
+}
+.projects-main-container {
+  display: flex;
+  flex-direction: column;
+}
+.project-container {
+  margin: 15px 0;
+}
+
+footer {
+  height: 100px;
+}
