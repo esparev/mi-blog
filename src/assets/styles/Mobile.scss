@@ -1,0 +1,94 @@
+@media only screen and (max-width: 768px) {
+  section .grid-container {
+    grid-template-columns: initial;
+  }
+  // HEADER
+  .socials__container {
+    display: flex;
+    justify-content: center;
+  }
+  .header .socials__icons {
+    margin: 0;
+  }
+  .header .logo__container {
+    margin: 0;
+  }
+  .header .about-me__container {
+    margin-right: 30px;
+  }
+  // HOME
+  .home-main__section {
+    margin-top: 80px;
+  }
+  .home-main--text {
+    font-size: 3.5rem;
+  }
+  // BLOGS
+  .new-blog {
+    padding: 0 20px 10px;
+  }
+  .new-blog__container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .new-blog__container .new-blog__info {
+    padding-left: 0;
+  }
+  .new-blog__info--title {
+    margin-top: 20px;
+  }
+  .blogs {
+    padding: 0 20px 10px;
+  }
+  .grid-container {
+    display: inline-block;
+  }
+  .blog-item__container {
+    max-width: none;
+  }
+  // BLOG
+  .blogpost__image {
+    padding: 0 20px 10px;
+  }
+  .blogpost__container {
+    padding: 0 20px 10px;
+  }
+  // CONTACT
+  .contact {
+    flex-direction: column;
+  }
+  .contact__container {
+    width: 90%;
+  }
+  // PROFILE
+  main .profile {
+    margin-bottom: 30px;
+    padding: 30px 20px;
+  }
+  .profile__container {
+    flex-direction: column;
+  }
+  .profile__image--img {
+    width: 100%;
+    margin: 0;
+  }
+  .projects {
+    padding: 0 20px 10px;
+  }
+  .projects__container {
+    display: flex;
+    flex-direction: column;
+  }
+  .projects .projects__container {
+    grid-template-columns: initial;
+    text-align: center;
+    margin: 15px 0;
+  }
+  // FOOTER
+  .footer {
+    height: 100px;
+    padding: 0 15px;
+  }
+}

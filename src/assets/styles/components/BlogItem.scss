@@ -1,0 +1,21 @@
+@import "../Vars.scss";
+
+.blog-item__container {
+  display: inline-block;
+  margin-bottom: 50px;
+  padding: 0 15px;
+}
+.blog-item__image {
+  display: inline-block;
+  width: 100%;
+}
+.blog-item__image--img {
+  width: 100%;
+  object-fit: cover;
+}
+.blog-item__image--title {
+  margin-top: 20px;
+}
+.blog-item__info--description {
+  margin-bottom: 20px;
+}
