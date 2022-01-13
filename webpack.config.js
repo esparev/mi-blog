@@ -44,13 +44,13 @@ module.exports = {
         ],
       },
       {
-        test: /\.(s*)css$/,
+        test: /\.less$/i,
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
           },
           'css-loader',
-          'sass-loader',
+          'less-loader',
         ],
       },
       {

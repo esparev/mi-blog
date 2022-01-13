@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '@styles/Header.scss';
+import '@styles/Header.less';
 import logo from '@static/mi-blog-logo.png';
 import facebookIcon from '@static/001-facebook.svg';
 import twitterIcon from '@static/013-twitter-1.svg';

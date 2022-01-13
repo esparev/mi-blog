@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from '@components/Layout';
 import Home from '@containers/Home';
 import Blogs from '@containers/Blogs';
@@ -9,12 +9,13 @@ import Profile from '@containers/Profile';
 const App = () => (
   <BrowserRouter>
     <Layout>
-      <Switch>
-        <Route exact path='/' component={Home} />
-        <Route exact path='/blogs' component={Blogs} />
-        <Route exact path='/blog' component={Blog} />
-        <Route exact path='/profile' component={Profile} />
-      </Switch>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='blogs' element={<Blogs />}>
+          <Route path=':/blogSlug' element={<Blog />} />
+        </Route>
+        <Route path='profile' element={<Profile />} />
+      </Routes>
     </Layout>
   </BrowserRouter>
 );

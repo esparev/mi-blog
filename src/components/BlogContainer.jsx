@@ -1,5 +1,5 @@
 import React from 'react';
-import '@styles/BlogContainer.scss';
+import '@styles/BlogContainer.less';
 
 const BlogContainer = ({ children }) => (
   <section className='blogs'>

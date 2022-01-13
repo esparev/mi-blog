@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import Project from '@components/Project';
 import Contact from '@components/Contact';
 import useInitialState from '@hooks/useInitialState';
-import '@styles/Profile.scss';
+import '@styles/Profile.less';
 import me from '@img/me.png';
 
 const API = 'http://localhost:3006/initialState';

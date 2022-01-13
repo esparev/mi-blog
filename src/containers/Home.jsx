@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import '@mainStyles/App.scss';
-import '@styles/Home.scss';
+import '@mainStyles/App.less';
+import '@styles/Home.less';
 
 const Home = () => {
   useEffect(() => {

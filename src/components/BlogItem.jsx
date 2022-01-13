@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import '@styles/BlogItem.scss';
+import '@styles/BlogItem.less';
 
 const BlogItem = ({ cover, title, description }) => (
   <article className='blog-item__container'>

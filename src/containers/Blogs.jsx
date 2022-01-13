@@ -4,7 +4,7 @@ import Contact from '@components/Contact';
 import BlogItem from '@components/BlogItem';
 import BlogContainer from '@components/BlogContainer';
 import useInitialState from '@hooks/useInitialState';
-import '@styles/Blogs.scss';
+import '@styles/Blogs.less';
 
 const API = 'http://localhost:3006/initialState';
 

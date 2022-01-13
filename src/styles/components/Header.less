@@ -1,23 +1,23 @@
-@import "../Vars.scss";
+@import '../Vars.less';
 
 .header {
-  display: grid;
   width: 100%;
   height: 140px;
+  display: grid;
   grid-template-rows: 1fr 1fr;
 }
 .socials__container {
-  display: grid;
   width: 100%;
   height: 50px;
-  background-color: $caribbean-green;
+  display: grid;
+  background-color: @caribbean-green;
 }
 .socials__icons {
-  display: flex;
   width: 300px;
   height: auto;
-  justify-content: flex-end;
+  display: flex;
   align-items: center;
+  justify-content: flex-end;
   justify-content: space-between;
   justify-self: end;
   margin-right: 50px;
@@ -26,9 +26,9 @@
   width: 20px;
 }
 .nav {
+  height: 90px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 90px;
 }
 .logo__container {
   margin-left: 50px;
@@ -44,6 +44,6 @@
   margin-right: 50px;
 }
 .about-me__container--link {
-  border-bottom: 1px solid $black;
-  color: $black;
+  border-bottom: 1px solid @black;
+  color: @black;
 }

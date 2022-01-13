@@ -1,5 +1,5 @@
 import React from 'react';
-import '@styles/Contact.scss';
+import '@styles/Contact.less';
 import newsletterIcon from '@static/013-newsletter.png';
 import shareIcon from '@static/020-browser.png';
 

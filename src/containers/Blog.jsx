@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import '@styles/Blog.scss';
+import '@styles/Blog.less';
 
 const Blog = ({ cover, title, description }) => {
   useEffect(() => {

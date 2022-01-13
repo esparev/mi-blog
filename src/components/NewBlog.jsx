@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '@styles/NewBlog.scss';
+import '@styles/NewBlog.less';
 
 const NewBlog = ({ cover, title, description }) => (
   <section className='new-blog'>

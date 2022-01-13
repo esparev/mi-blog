@@ -1,38 +1,38 @@
-@import "../Vars.scss";
+@import '../Vars.less';
 
 .home-main {
-  display: grid;
   height: 100%;
+  display: grid;
   grid-template-columns: 1fr 4fr 1fr;
-  background-image: url("@img/cover.png");
-  background-position: center;
+  background-image: url('@img/cover.png');
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 }
 .home-main__section {
-  display: grid;
   height: 350px;
-  margin-top: 80px;
+  display: grid;
   grid-column: 2;
   justify-items: center;
+  margin-top: 80px;
 }
 .home-main--text {
   font-size: 5rem;
   font-weight: 700;
   letter-spacing: 0.5rem;
   text-align: center;
-  color: $white;
+  color: @white;
 }
 .home-main__button {
-  display: grid;
   width: 110px;
   height: 50px;
-  border: 0;
+  display: grid;
   align-items: center;
-  background-color: $caribbean-green;
+  border: 0;
+  background-color: @caribbean-green;
 }
 .home-main__button--link {
   font-size: 1.8rem;
   font-weight: 700;
-  color: $white;
+  color: @white;
 }
