@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../assets/styles/components/NewBlog.scss';
+import '@styles/NewBlog.scss';
 
 const NewBlog = ({ cover, title, description }) => (
   <section className='new-blog'>
@@ -9,7 +9,7 @@ const NewBlog = ({ cover, title, description }) => (
         <img
           className='new-blog__image--img'
           src={cover}
-          alt='Blogpost Image'
+          alt='Blogpost Cover'
         />
       </div>
       <div className='new-blog__info'>

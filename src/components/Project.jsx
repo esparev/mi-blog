@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../assets/styles/components/Project.scss';
+import '@styles/Project.scss';
 
 const Project = ({ title, description }) => (
   <article className='projects__container--item'>

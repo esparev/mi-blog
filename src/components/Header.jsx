@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../assets/styles/components/Header.scss';
-import logo from '../assets/static/mi-blog-logo.png';
-import facebookIcon from '../assets/static/001-facebook.svg';
-import twitterIcon from '../assets/static/013-twitter-1.svg';
-import instagramIcon from '../assets/static/011-instagram.svg';
-import linkedinIcon from '../assets/static/010-linkedin.svg';
-import youtubeIcon from '../assets/static/008-youtube.svg';
+import '@styles/Header.scss';
+import logo from '@static/mi-blog-logo.png';
+import facebookIcon from '@static/001-facebook.svg';
+import twitterIcon from '@static/013-twitter-1.svg';
+import instagramIcon from '@static/011-instagram.svg';
+import linkedinIcon from '@static/010-linkedin.svg';
+import youtubeIcon from '@static/008-youtube.svg';
 
 const Header = () => (
   <header className='header'>

@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Home from '../containers/Home';
-import Blogs from '../containers/Blogs';
-import Blog from '../containers/Blog';
-import Profile from '../containers/Profile';
-import Layout from '../components/Layout';
+import Layout from '@components/Layout';
+import Home from '@containers/Home';
+import Blogs from '@containers/Blogs';
+import Blog from '@containers/Blog';
+import Profile from '@containers/Profile';
 
 const App = () => (
   <BrowserRouter>

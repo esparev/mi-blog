@@ -1,7 +1,7 @@
 import React from 'react';
-import '../assets/styles/components/Contact.scss';
-import newsletterIcon from '../assets/static/013-newsletter.png';
-import shareIcon from '../assets/static/020-browser.png';
+import '@styles/Contact.scss';
+import newsletterIcon from '@static/013-newsletter.png';
+import shareIcon from '@static/020-browser.png';
 
 const Contact = () => (
   <section className='contact'>

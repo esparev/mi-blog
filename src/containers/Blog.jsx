@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import '../assets/styles/components/Blog.scss';
+import '@styles/Blog.scss';
 
 const Blog = ({ cover, title, description }) => {
   useEffect(() => {
@@ -8,7 +8,7 @@ const Blog = ({ cover, title, description }) => {
   return (
     <main className='blogpost'>
       <section className='grid-container blogpost-img-container'>
-        <img src={cover} alt='Blogpost Image' />
+        <img src={cover} alt='Blogpost Cover' />
       </section>
       <section className='blogpost__container'>
         <div className='grid-container'>
