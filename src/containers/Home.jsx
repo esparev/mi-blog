@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 import '@mainStyles/App.less';
 import '@styles/Home.less';
 
-const Home = () => {
+function Home() {
   useEffect(() => {
     document.title = 'Mi Blog';
-  });
+  }, []);
 
   return (
     <main className='home-main'>
@@ -20,6 +20,6 @@ const Home = () => {
       </section>
     </main>
   );
-};
+}
 
 export default Home;

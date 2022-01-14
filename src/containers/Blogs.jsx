@@ -1,34 +1,34 @@
 import React, { useEffect } from 'react';
+import { connect } from 'react-redux';
 import NewBlog from '@components/NewBlog';
 import Contact from '@components/Contact';
 import BlogItem from '@components/BlogItem';
 import BlogContainer from '@components/BlogContainer';
-import useInitialState from '@hooks/useInitialState';
 import '@styles/Blogs.less';
 
-const API = 'http://localhost:3006/initialState';
-
-const Blogs = () => {
-  const initialState = useInitialState(API);
+function Blogs(props) {
+  const { blogPosts } = props;
 
   useEffect(() => {
     document.title = 'Mi Blog • Blogs';
-  });
+  }, []);
 
   return (
     <>
-      {initialState.blogs[0] && (
+      {blogPosts[0] && (
         <NewBlog
-          key={initialState.blogs[0].id}
-          cover={initialState.blogs[0].cover}
-          title={initialState.blogs[0].title}
-          description={initialState.blogs[0].description}
+          key={blogPosts[0].slug}
+          cover={blogPosts[0].cover}
+          title={blogPosts[0].title}
+          description={blogPosts[0].description}
+          route={`/blogs/${blogPosts[0].slug}`}
         />
       )}
       <BlogContainer>
-        {initialState.blogs.map((item) => (
+        {blogPosts.map((item) => (
           <BlogItem
-            key={item.id}
+            key={item.slug}
+            slug={item.slug}
             cover={item.cover}
             title={item.title}
             description={item.description}
@@ -38,6 +38,12 @@ const Blogs = () => {
       <Contact />
     </>
   );
+}
+
+const mapStateToProps = (state) => {
+  return {
+    blogPosts: state.blogPosts,
+  };
 };
 
-export default Blogs;
+export default connect(mapStateToProps, null)(Blogs);

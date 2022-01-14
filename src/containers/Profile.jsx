@@ -1,18 +1,16 @@
 import React, { useEffect } from 'react';
+import { connect } from 'react-redux';
 import Project from '@components/Project';
 import Contact from '@components/Contact';
-import useInitialState from '@hooks/useInitialState';
 import '@styles/Profile.less';
 import me from '@img/me.png';
 
-const API = 'http://localhost:3006/initialState';
-
-const Profile = () => {
-  const initialState = useInitialState(API);
+function Profile(props) {
+  const { projects } = props;
 
   useEffect(() => {
     document.title = 'Mi Blog • Profile';
-  });
+  }, []);
 
   return (
     <main>
@@ -24,14 +22,12 @@ const Profile = () => {
           <div className='profile__info'>
             <h1>Hey!</h1>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui
-              deserunt soluta voluptatum quas porro, saepe nostrum! Tempora
-              minus delectus enim explicabo, porro, ducimus possimus magnam non
-              est, error illum inventore? Lorem ipsum dolor sit amet
-              consectetur, adipisicing elit. Officiis aliquid asperiores cumque,
-              repellendus, possimus consectetur doloremque veniam atque eos enim
-              dolore modi omnis, perspiciatis perferendis ad dolores corrupti
-              minus dolor!
+              My name is JoseMa Esparza and I love making websites. Currently I
+              am developing a professional character as a FullStack web
+              developer by learning how to use the best technologies that can
+              adapt to the specific needs of a website. I like things being well
+              made that's why my work is based on applying the best practices
+              and the best effort.
             </p>
           </div>
         </div>
@@ -40,7 +36,7 @@ const Profile = () => {
         <div className='grid-container'>
           <h2 className='projects--title'>Projects</h2>
           <div className='projects__container'>
-            {initialState.projects.map((item) => (
+            {projects.map((item) => (
               <Project
                 key={item.id}
                 title={item.title}
@@ -53,6 +49,12 @@ const Profile = () => {
       <Contact />
     </main>
   );
+}
+
+const mapStateToProps = (state) => {
+  return {
+    projects: state.projects,
+  };
 };
 
-export default Profile;
+export default connect(mapStateToProps, null)(Profile);

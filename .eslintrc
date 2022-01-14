@@ -60,7 +60,11 @@
       }
     }
   },
-  "parser": "babel-eslint",
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "requireConfigFile": false
+  },
   "plugins": [
     "react",
     "jsx-a11y",
