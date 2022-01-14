@@ -4,8 +4,8 @@ import '@styles/BlogContainer.less';
 export default function BlogContainer({ children }) {
   return (
     <section className='blogs'>
-      <h3></h3>
-      <div className='grid-container'>{children}</div>
+      <h3>Recent blogposts</h3>
+      <div className='blogs-container'>{children}</div>
     </section>
   );
 }

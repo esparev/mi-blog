@@ -6,7 +6,7 @@ import '@styles/NewBlog.less';
 export default function NewBlog({ cover, title, description, route }) {
   return (
     <section className='new-blog'>
-      <div className='grid-container new-blog__container'>
+      <div className='new-blog__container'>
         <div className='new-blog__image'>
           <img
             className='new-blog__image--img'

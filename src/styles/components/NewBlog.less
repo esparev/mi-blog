@@ -1,8 +1,16 @@
 @import '../Vars.less';
 
 .new-blog {
+  display: grid;
+  place-content: center;
   padding: 40px 50px;
   background-color: @light-gray;
+}
+.new-blog__container {
+  max-width: 980px;
+  display: grid;
+  place-content: center;
+  grid-template-columns: 50% 50%;
 }
 .new-blog__image--img {
   width: 100%;
@@ -11,5 +19,6 @@
   padding-left: 30px;
 }
 .new-blog__info--description {
-  margin-bottom: 35px;
+  margin-top: 20px;
+  margin-bottom: 32px;
 }

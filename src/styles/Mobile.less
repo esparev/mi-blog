@@ -1,7 +1,4 @@
 @media only screen and (max-width: 768px) {
-  section .grid-container {
-    grid-template-columns: initial;
-  }
   // H E A D E R
   .socials__container {
     display: flex;
@@ -19,19 +16,19 @@
   // H O M E
   .home-main__section {
     margin-top: 80px;
-  }
-  .home-main--text {
-    font-size: 3.5rem;
+    .home-main--text {
+      font-size: 5rem;
+    }
   }
   // B L O G S
   .new-blog {
     padding: 0 20px 10px;
-  }
-  .new-blog__container {
-    display: flex;
-    flex-direction: column;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    .new-blog__container {
+      display: flex;
+      flex-direction: column;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
   }
   .new-blog__container .new-blog__info {
     padding-left: 0;
@@ -41,12 +38,15 @@
   }
   .blogs {
     padding: 0 20px 10px;
-  }
-  .grid-container {
-    display: inline-block;
+    .blogs-container {
+      grid-template-columns: initial;
+    }
   }
   .blog-item__container {
     max-width: none;
+    .blog-item__image {
+      height: auto;
+    }
   }
   // B L O G
   .blogpost__image,

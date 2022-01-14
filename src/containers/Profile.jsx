@@ -33,7 +33,7 @@ function Profile(props) {
         </div>
       </section>
       <section className='projects'>
-        <div className='grid-container'>
+        <div className='projects-grid'>
           <h2 className='projects--title'>Projects</h2>
           <div className='projects__container'>
             {projects.map((item) => (
