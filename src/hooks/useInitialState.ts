@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-const useInitialState = (API) => {
+const useInitialState = (API: string) => {
   const [data, setData] = useState({
     blogs: [],
     projects: [],

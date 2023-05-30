@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import '@mainStyles/App.less';
-import '@styles/Home.less';
+import '../styles/App.less';
+import '../styles/components/Home.less';
 
-function Home() {
+const Home = (): JSX.Element => {
   useEffect(() => {
     document.title = 'Mi Blog';
   }, []);
@@ -20,6 +20,6 @@ function Home() {
       </section>
     </main>
   );
-}
+};
 
 export default Home;

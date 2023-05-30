@@ -4,7 +4,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   mode: 'development',
-  entry: './src/index.js',
+  entry: './src/index.tsx',
 
   output: {
     publicPath: '/',
@@ -14,44 +14,31 @@ module.exports = {
   },
 
   resolve: {
-    extensions: ['.js', '.jsx'],
-    alias: {
-      '@styles': path.resolve(__dirname, 'src/styles/components/'),
-      '@components': path.resolve(__dirname, 'src/components/'),
-      '@containers': path.resolve(__dirname, 'src/containers/'),
-      '@static': path.resolve(__dirname, 'src/assets/static/'),
-      '@mainStyles': path.resolve(__dirname, 'src/styles/'),
-      '@img': path.resolve(__dirname, 'src/assets/img/'),
-      '@hooks': path.resolve(__dirname, 'src/hooks/'),
-    },
+    extensions: ['.js', '.jsx', '.ts', '.tsx'],
   },
 
   module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
+        use: [{ loader: 'babel-loader' }],
         exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-        },
+      },
+      {
+        test: /\.(ts|tsx)?$/,
+        use: [
+          // { loader: 'ts-loader' },
+          { loader: 'babel-loader', options: { presets: ['@babel/preset-react', '@babel/preset-typescript'] } },
+        ],
+        exclude: /node_modules/,
       },
       {
         test: /\.html$/,
-        use: [
-          {
-            loader: 'html-loader',
-          },
-        ],
+        use: [{ loader: 'html-loader' }],
       },
       {
         test: /\.less$/i,
-        use: [
-          {
-            loader: MiniCssExtractPlugin.loader,
-          },
-          'css-loader',
-          'less-loader',
-        ],
+        use: [{ loader: MiniCssExtractPlugin.loader }, 'css-loader', 'less-loader'],
       },
       {
         test: /\.(png|gif|jpg|svg|ico)$/,

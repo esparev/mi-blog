@@ -1,18 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import PropTypes from 'prop-types';
-import '@styles/NewBlog.less';
+import '../styles/components/NewBlog.less';
 
-export default function NewBlog({ cover, title, description, route }) {
+const NewBlog = ({ cover, title, description, route }: NewBlog): JSX.Element => {
   return (
     <section className='new-blog'>
       <div className='new-blog__container'>
         <div className='new-blog__image'>
-          <img
-            className='new-blog__image--img'
-            src={cover}
-            alt='Blogpost Cover'
-          />
+          <img className='new-blog__image--img' src={cover} alt='Blogpost Cover' />
         </div>
         <div className='new-blog__info'>
           <h2 className='new-blog__info--title'>{title}</h2>
@@ -24,11 +19,6 @@ export default function NewBlog({ cover, title, description, route }) {
       </div>
     </section>
   );
-}
-
-NewBlog.propTypes = {
-  cover: PropTypes.string,
-  title: PropTypes.string,
-  description: PropTypes.string,
-  route: PropTypes.string,
 };
+
+export default NewBlog;
