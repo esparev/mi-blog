@@ -43,8 +43,8 @@ const initialState = {
     },
     {
       id: 5,
-      title: 'The Face Behing Wellow',
-      slug: 'the-face-behing-wellow',
+      title: 'The Face Behind Wellow',
+      slug: 'the-face-behind-wellow',
       description:
         'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui deserunt soluta voluptatum quas porro, saepe nostrum! Tempora minus delectus enim explicabo, porro, ducimus possimus magnam non est, error illum inventore',
       cover:
