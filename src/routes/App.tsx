@@ -4,9 +4,8 @@ import Layout from '../components/Layout';
 import Home from '../containers/Home';
 import Blogs from '../containers/Blogs';
 import Blog from '../containers/Blog';
-import Profile from '../containers/Profile';
 
-const App = (): JSX.Element => {
+const App = () => {
   return (
     <React.StrictMode>
       <BrowserRouter>
@@ -15,7 +14,6 @@ const App = (): JSX.Element => {
             <Route index element={<Home />} />
             <Route path='blogs' element={<Blogs />} />
             <Route path='blogs/:slug' element={<Blog />} />
-            <Route path='profile' element={<Profile />} />
           </Routes>
         </Layout>
       </BrowserRouter>

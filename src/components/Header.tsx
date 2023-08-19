@@ -1,14 +1,12 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
-import '../styles/components/Header.less';
-import logo from '../assets/static/mi-blog-logo.png';
+import logo from '/assets/mi-blog-logo.png';
 import { Instagram, Twitter, LinkedIn } from '../components/Logos';
 
 const Header = (): JSX.Element => {
   return (
-    <header className='header'>
-      <section className='socials__container'>
-        <div className='socials__icons'>
+    <header className='w-full height-[20vh] flex flex-col'>
+      <section className='w-full h-[5vh] grid bg-caribbean-green'>
+        <div className='flex items-center h-auto mr-12 gap-x-8 justify-self-end'>
           <a href='https://www.twitter.com/esparev' target='_blank' rel='noopener noreferrer'>
             <Twitter />
           </a>
@@ -20,15 +18,10 @@ const Header = (): JSX.Element => {
           </a>
         </div>
       </section>
-      <nav className='nav'>
-        <section className='logo__container'>
+      <nav className='h-[15vh] grid place-content-center grid-cols-2'>
+        <section className='ml-12'>
           <Link to='/'>
-            <img className='logo__container--img' src={logo} alt='Mi Blog' />
-          </Link>
-        </section>
-        <section className='about-me__container'>
-          <Link className='about-me__container--link' to='/profile'>
-            About me
+            <img className='w-56 mt-3' src={logo} alt='Mi Blog' />
           </Link>
         </section>
       </nav>
