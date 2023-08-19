@@ -1,35 +1,28 @@
-@import './Vars.less';
+/* @import './Vars.less';
 @import './Desktop.less';
-@import './Mobile.less';
+@import './Mobile.less'; */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-// G L O B A L S
+/* G L O B A L S */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
-html {
-  font-family: @theme-font;
-  font-size: 62.5%;
-}
-
 body {
   margin: 0;
   padding: 0;
-  font-size: 1.5rem;
 }
-
 a {
   display: inline;
   text-decoration: none;
-  color: @black;
+  color: black;
 }
-
 p {
   line-height: 1.5;
 }
-
 .home-body {
   position: fixed;
   top: 0;
