@@ -18,8 +18,8 @@ const Header = (): JSX.Element => {
           </a>
         </div>
       </section>
-      <nav className='h-[15vh] grid place-content-center grid-cols-2'>
-        <section className='ml-12'>
+      <nav className='h-[15vh] grid place-content-center'>
+        <section className='w-full mx-auto'>
           <Link to='/'>
             <img className='w-56 mt-3' src={logo} alt='Mi Blog' />
           </Link>
